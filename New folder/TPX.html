@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="TPX.css" />
+    <link rel="stylesheet" href="all.min.css" />
+    <title>Personale info</title>
+  </head>
+  <body>
+    <div class="all">
+      <div class="left">
+        <div id="TOP">
+          <i class="fa-solid fa-bars"></i>
+          <i class="fa-solid fa-user"></i>
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <i class="fa-solid fa-gear"></i>
+        </div>
+        <div id="DOWN">
+          <i class="fa-solid fa-circle-question"></i>
+          <i class="fa-solid fa-right-from-bracket"></i>
+        </div>
+      </div>
+      <div class="middle">
+        <h1>UPDATE PROFILE</h1>
+        <div class="details">
+          <h2>Personale details</h2>
+          <div class="firstname">
+            <label for="">first name</label><br />
+
+            <input
+              type="text"
+              value=""
+              placeholder="enter your first name "
+              id="first"
+            />
+
+            <p id="p1">Enter your first name</p>
+            <br />
+          </div>
+
+          <div class="lastname">
+            <label for="">last name</label><br />
+            <input
+              type="text"
+              value=""
+              placeholder="enter your last name "
+              id="last"
+            />
+
+            <p id="p2">Enter your last name</p>
+          </div>
+          <h3 style="color: hsl(158, 32%, 22%)">gender</h3>
+          <input type="radio" name="gender" checked id="male" />
+          <label for="male" style="font-weight: lighter">male</label>
+          <input type="radio" name="gender" id="female" />
+          <label for="female" style="font-weight: lighter">female</label>
+          <h3 style="margin-top: 35px; color: hsl(158, 32%, 22%)" id="female">
+            grade
+          </h3>
+          <select name="select" id="select" onchange="update()">
+            <option>student</option>
+            <option>professor</option>
+            <option>visitor</option>
+            <option>teacher</option>
+          </select>
+          <br />
+          <br />
+          <div class="email">
+            <label for="">email</label> <br />
+            <input type="email" id="mail" placeholder="enter your email" />
+            <p id="p3">Enter your email</p>
+            <br />
+          </div>
+          <div class="phone">
+            <label for="">phone</label><br />
+            <input
+              type="number"
+              id="phone"
+              placeholder="enter your number"
+              value=""
+            />
+            <p id="p4">Enter your number</p>
+          </div>
+          <br />
+          <div class="adresse">
+            <label for="">adress</label><br />
+            <input
+              type="text"
+              id="adress"
+              placeholder="enter your adresse"
+              value=""
+            />
+
+            <p id="p5">Enter your addresse</p>
+          </div>
+          <br />
+          <div class="town">
+            <label for="">town</label> <br />
+            <input
+              type="text"
+              id="town"
+              placeholder="enter your town name"
+              value=""
+            />
+
+            <p id="p6">Enter name of your town</p>
+          </div>
+          <br />
+          <div class="codepostal">
+            <label for="">code postal</label> <br />
+            <input
+              type="number"
+              id="codepost"
+              placeholder="enter your code postale"
+              value=""
+            />
+            <p id="p7">Enter your code postal</p>
+          </div>
+          <br />
+          <div class="procode">
+            <label for="">profesional code </label><br />
+            <input
+              type="number"
+              id="procode"
+              placeholder="enter your profesional code"
+              value=""
+            />
+            <p id="p8">enter your profesional code</p>
+          </div>
+          <br />
+          <button>Save</button>
+          <p id="erreur">please Complete the inputs fields to save your data</p>
+        </div>
+      </div>
+      <div class="right">
+        <div class="top">
+          <div class="img"></div>
+          <p>Abdelmoghith Houari</p>
+          <p>Houari@gmail.com</p>
+          <div class="logo">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+        </div>
+        <div class="down">
+          <h2>Your details</h2>
+          <div class="userinfo">
+            <p>first name</p>
+            <p id="field1">...</p>
+          </div>
+          <div class="userinfo">
+            <p>last name</p>
+            <p id="field2">...</p>
+          </div>
+          <div class="userinfo">
+            <p>gender</p>
+            <p id="fieldx">...</p>
+          </div>
+          <div class="userinfo">
+            <p>grade</p>
+            <p id="fieldy">...</p>
+          </div>
+          <div class="userinfo">
+            <p>email</p>
+            <p id="field3">...</p>
+          </div>
+          <div class="userinfo">
+            <p>phone</p>
+            <p id="field4">...</p>
+          </div>
+          <div class="userinfo">
+            <p>adresse</p>
+            <p id="field5">...</p>
+          </div>
+          <div class="userinfo">
+            <p>town</p>
+            <p id="field6">...</p>
+          </div>
+          <div class="userinfo">
+            <p>code postal</p>
+            <p id="field7">...</p>
+          </div>
+          <div class="userinfo">
+            <p>profesional code</p>
+            <p id="field8">...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script src="tp.js"></script>
+</html>
