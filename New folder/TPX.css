@@ -119,7 +119,7 @@ option {
   background-image: url(283797227_1823229441388271_8701652661886264259_n.jpg);
   width: 70px;
   height: 70px;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 50%;
